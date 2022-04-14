@@ -1,6 +1,9 @@
 # vite-react-proste
 Simple, convenient, out of the box, using vite's react template
 
+## Preview
+
+<img src="https://raw.githubusercontent.com/xyhxx/program_preview/master/vite-react-proste/preview.png" />
 
 ## Useage
 
