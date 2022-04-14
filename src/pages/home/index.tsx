@@ -1,3 +1,5 @@
+import icon from '@assets/images/logo.svg';
+
 import css from './index.module.scss';
 
 import { FC, useState } from 'react';
@@ -7,6 +9,7 @@ const Home: FC = function () {
 
   return (
     <>
+      <img src={icon} className={css['icon']} />
       <h1 className={css['title']} data-testid='title'>
         count is {count}
       </h1>

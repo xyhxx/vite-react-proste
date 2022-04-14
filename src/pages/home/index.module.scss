@@ -3,11 +3,17 @@ html {
   display: flex;
   justify-content: center;
   min-height: 100vh;
+  background-color: #20232a;
 }
 
 .title {
-  padding-top: 20vh;
+  padding-top: 80px;
+  color: white;
   text-align: center;
+}
+
+.icon {
+  width: 40vw;
 }
 
 .btn-group {
