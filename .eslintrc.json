@@ -1,0 +1,11 @@
+{
+  "extends": [
+    "proste/reactTS.js",
+    "eslint-config-prettier"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "tsconfigRootDir": ".",
+    "warnOnUnsupportedTypeScriptVersion": true
+  }
+}

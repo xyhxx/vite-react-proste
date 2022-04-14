@@ -1,0 +1,19 @@
+body,
+html {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.title {
+  padding-top: 20vh;
+  text-align: center;
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 200px;
+  margin: 30px auto 0;
+}
