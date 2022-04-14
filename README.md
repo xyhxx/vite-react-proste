@@ -5,7 +5,7 @@ Simple, convenient, out of the box, using vite's react template
 
 <img src="https://raw.githubusercontent.com/xyhxx/program_preview/master/vite-react-proste/preview.png" />
 
-## Useage
+## Usage
 
 -  Clone this repo, like `git clone https://github.com/xyhxx/vite-react-proste.git`. In addition, you can click "Use this template" to copy this template to your repositories
 
