@@ -14,7 +14,8 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "types": ["vitest/globals"]
   },
   "extends": "./tsconfig.paths.json",
   "include": ["src", "jest.config.ts", "vite.config.ts"]

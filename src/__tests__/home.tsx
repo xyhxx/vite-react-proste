@@ -18,9 +18,9 @@ test(`
 
   fireEvent.click(incrementBtn);
 
-  expect(html).toHaveTextContent('count is 1');
+  expect(html.innerHTML).toBe('count is 1');
 
   fireEvent.click(reduceBtn);
 
-  expect(html).toHaveTextContent('count is 0');
+  expect(html.innerHTML).toBe('count is 0');
 });
