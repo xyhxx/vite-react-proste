@@ -18,5 +18,5 @@
     "types": ["vitest/globals"]
   },
   "extends": "./tsconfig.paths.json",
-  "include": ["src", "jest.config.ts", "vite.config.ts"]
+  "include": ["src", "jest.config.ts", "vite.config.ts", "__tests__"]
 }
