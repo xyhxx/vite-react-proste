@@ -1,10 +1,10 @@
 import { FC } from 'react';
 import { Home } from '@pages';
 import { useRoutes } from 'react-router-dom';
-import { HOME_PAGE } from './name';
+import { HOME_PATH } from './name';
 
 const PrivateRoutes: FC = function () {
-  const Routes = useRoutes([{ path: HOME_PAGE, element: <Home /> }]);
+  const Routes = useRoutes([{ path: HOME_PATH, element: <Home /> }]);
 
   return Routes;
 };
