@@ -31,14 +31,13 @@ specifiers:
   jsdom: ^20.0.0
   postcss: ^8.4.14
   prettier: ^2.7.1
-  proste-react-use: ^4.0.0
+  proste-react-use: ^4.0.1
   react: ^18.2.0
   react-app-polyfill: ^3.0.0
   react-dom: ^18.2.0
   react-error-boundary: ^3.1.4
   react-router-dom: ^6.3.0
   react-test-renderer: ^18.2.0
-  recoil: ^0.7.4
   rollup-plugin-visualizer: ^5.7.1
   sass: ^1.54.0
   scheduler: ^0.23.0
@@ -51,16 +50,17 @@ specifiers:
   typescript: ^4.7.4
   vite: ^3.0.3
   vitest: ^0.19.1
+  zustand: ^4.0.0
 
 dependencies:
   '@tanstack/react-query': 4.0.10_biqbaboplfbrettd7655fr4n2y
   axios: 0.27.2
-  proste-react-use: 4.0.0_2szjah6qrhd6fr2kgr64p4pjgm
+  proste-react-use: 4.0.1_2szjah6qrhd6fr2kgr64p4pjgm
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-error-boundary: 3.1.4_react@18.2.0
   react-router-dom: 6.3.0_biqbaboplfbrettd7655fr4n2y
-  recoil: 0.7.4_biqbaboplfbrettd7655fr4n2y
+  zustand: 4.0.0_react@18.2.0
 
 devDependencies:
   '@babel/core': 7.18.9
@@ -3368,10 +3368,6 @@ packages:
     resolution: {integrity: sha512-xYfnw62CKG8nLkZBfWbhWwDw02CHty86jfPcc2cr3ZfeuK9ysoVPPEUxf21bAD/rWAgk52SuBrLJlefNy8mvFg==}
     dev: true
 
-  /hamt_plus/1.0.2:
-    resolution: {integrity: sha512-t2JXKaehnMb9paaYA7J0BX8QQAY8lwfQ9Gjf4pg/mk4krt+cmwmU652HOoWonf+7+EQV97ARPMhhVgU1ra2GhA==}
-    dev: false
-
   /hard-rejection/2.1.0:
     resolution: {integrity: sha512-VIZB+ibDhx7ObhAe7OVtoEbuP4h/MuOTHJ+J8h/eBXotJYl0fBgR72xDFCKgIh22OJZIOVNxBMWuhAr10r8HdA==}
     engines: {node: '>=6'}
@@ -4329,8 +4325,8 @@ packages:
       react-is: 16.13.1
     dev: true
 
-  /proste-react-use/4.0.0_2szjah6qrhd6fr2kgr64p4pjgm:
-    resolution: {integrity: sha512-UfslcVrR3gTlRSZ2SavruqxG8Dv8ctAaPHS9OKUgGNYQ5b9J4aWajImxJN2n0dQg9eBjY2qo99557naEFQVQWQ==}
+  /proste-react-use/4.0.1_2szjah6qrhd6fr2kgr64p4pjgm:
+    resolution: {integrity: sha512-71jPIFptPcnEI2pFEAxic4w19Qe6yYVDBa/ACTmbbPruVnhlEsdVFeCEYLgbUedjIxnDp++1KHJF8w3rQenEZw==}
     peerDependencies:
       react: '>=16.9'
     dependencies:
@@ -4497,23 +4493,6 @@ packages:
     dependencies:
       picomatch: 2.3.1
     dev: true
-
-  /recoil/0.7.4_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-sCXvQGMfSprkNU4ZRkJV4B0qFQSURJMgsICqY1952WRlg66NMwYqi6n67vhnhn0qw4zHU1gHXJuMvRDaiRNFZw==}
-    peerDependencies:
-      react: '>=16.13.1'
-      react-dom: '*'
-      react-native: '*'
-    peerDependenciesMeta:
-      react-dom:
-        optional: true
-      react-native:
-        optional: true
-    dependencies:
-      hamt_plus: 1.0.2
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
-    dev: false
 
   /redent/3.0.0:
     resolution: {integrity: sha512-6tDA8g98We0zd0GvVeMT9arEOnTw9qM03L9cJXaCjrip1OO764RDBLBfrB4cwzNGDj5OA5ioymC9GkizgWJDUg==}
@@ -5519,3 +5498,19 @@ packages:
     resolution: {integrity: sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==}
     engines: {node: '>=6'}
     dev: true
+
+  /zustand/4.0.0_react@18.2.0:
+    resolution: {integrity: sha512-OrsfQTnRXF1LZ9/vR/IqN9ws5EXUhb149xmPjErZnUrkgxS/gAHGy2dPNIVkVvoxrVe1sIydn4JjF0dYHmGeeQ==}
+    engines: {node: '>=12.7.0'}
+    peerDependencies:
+      immer: '>=9.0'
+      react: '>=16.8'
+    peerDependenciesMeta:
+      immer:
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      react: 18.2.0
+      use-sync-external-store: 1.2.0_react@18.2.0
+    dev: false

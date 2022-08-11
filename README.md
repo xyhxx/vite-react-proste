@@ -1,4 +1,5 @@
 # vite-react-proste
+
 Simple, convenient, out of the box, using vite's react template
 
 ## Preview
@@ -7,7 +8,8 @@ Simple, convenient, out of the box, using vite's react template
 
 ## Usage
 
--  Clone this repo, like `git clone https://github.com/xyhxx/vite-react-proste.git`. In addition, you can click "Use this template" to copy this template to your repositories
+- Clone this repo, like `git clone https://github.com/xyhxx/vite-react-proste.git`. In addition, you
+  can click "Use this template" to copy this template to your repositories
 
 - Install all dependencies `pnpm install`
 
@@ -23,9 +25,10 @@ Simple, convenient, out of the box, using vite's react template
 
 ## ✨Packages
 
-> typescript is used in the project, and all dependencies that need to install @types/xxx have been added
+> typescript is used in the project, and all dependencies that need to install @types/xxx have been
+> added
 
-✅ Recoil
+✅ Zustand
 
 ✅ react-route-dom
 
@@ -35,15 +38,13 @@ Simple, convenient, out of the box, using vite's react template
 
 ✅ Sass
 
-✅ Jest
+✅ Vitest
 
 ✅ Testing Library
 
 ✅ react-query
 
 ✅ react-error-boundary
-
-✅ Classnames
 
 ✅ ESLint
 
@@ -56,6 +57,7 @@ Simple, convenient, out of the box, using vite's react template
 ✅ PostCSS
 
 ## 🎊Preset
+
 > Alias folders are exported using index
 
 ✅ folder(pages, routes, apis, assets, hooks, components, stores, styles, utils)
@@ -71,7 +73,6 @@ Simple, convenient, out of the box, using vite's react template
 ✅ prettier config
 
 ✅ editor config
-
 
 ## LICENSE
 

@@ -16,12 +16,12 @@
   "dependencies": {
     "@tanstack/react-query": "^4.0.10",
     "axios": "^0.27.2",
-    "proste-react-use": "^4.0.0",
+    "proste-react-use": "^4.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-error-boundary": "^3.1.4",
     "react-router-dom": "^6.3.0",
-    "recoil": "^0.7.4"
+    "zustand": "^4.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.18.9",
