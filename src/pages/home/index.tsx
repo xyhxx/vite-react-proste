@@ -6,17 +6,20 @@ import {useClassNames} from 'proste-react-use';
 import {FC} from 'react';
 import {useCount} from '@stores';
 import shallow from 'zustand/shallow';
+import {useMeta} from 'use-meta-route';
 
 const Home: FC = function () {
-  const [style] = useClassNames({styleSheet: css, camelTransition: '-'});
+  const [style, cla] = useClassNames({styleSheet: css, camelTransition: '-'});
   const {count, inc, dec} = useCount(state => state, shallow);
+  const {title} = useMeta<{title: string}>();
 
   return (
     <>
       <img src={icon} className={style.icon} />
-      <h1 className={style.title} data-testid='title'>
+      <h1 className={cla([style.title, style.name, {[style.titleRed]: count >= 5}])}>{title}</h1>
+      <h2 className={style.title} data-testid='title'>
         count is {count}
-      </h1>
+      </h2>
       <div className={style.btnGroup}>
         <button onClick={inc} data-testid='increment'>
           increment

@@ -1,10 +1,13 @@
-import { FC } from 'react';
-import { Home } from '@pages';
-import { useRoutes } from 'react-router-dom';
-import { HOME_PATH } from './name';
+import {FC} from 'react';
+import {Home} from '@pages';
+import {HOME_PATH} from './name';
+import {RouteMetaObject, useMetaRoutes} from 'use-meta-route';
 
+const routes: RouteMetaObject[] = [
+  {path: HOME_PATH, element: <Home />, meta: {title: 'vite-react-proste'}},
+];
 const PrivateRoutes: FC = function () {
-  const Routes = useRoutes([{ path: HOME_PATH, element: <Home /> }]);
+  const Routes = useMetaRoutes({routes});
 
   return Routes;
 };

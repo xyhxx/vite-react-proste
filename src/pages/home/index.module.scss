@@ -7,13 +7,21 @@ html {
 }
 
 .title {
-  padding-top: 80px;
+  margin-top: 80px;
   color: white;
   text-align: center;
 }
 
+.name {
+  margin-top: 20px;
+  font-size: 60px;
+  transition: color 500ms;
+}
+
 .icon {
-  width: 40vw;
+  display: block;
+  width: 20vw;
+  margin: 0 auto;
 }
 
 .btn-group {
@@ -22,4 +30,8 @@ html {
   justify-content: space-evenly;
   width: 200px;
   margin: 30px auto 0;
+}
+
+.title-red {
+  color: red;
 }
