@@ -2,7 +2,7 @@ import icon from '@assets/images/logo.svg';
 
 import css from './index.module.scss';
 
-import {useClassNames} from 'proste-react-use';
+import {useClassNames} from 'react-hook-classnames';
 import {FC} from 'react';
 import {useCount} from '@stores';
 import shallow from 'zustand/shallow';
