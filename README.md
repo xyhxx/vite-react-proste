@@ -52,8 +52,6 @@ Simple, convenient, out of the box, using vite's react template
 
 ✅ Prettier
 
-✅ proste-react-use
-
 ✅ PostCSS
 
 ## 🎊Preset
