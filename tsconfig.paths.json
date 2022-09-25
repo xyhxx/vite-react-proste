@@ -11,6 +11,7 @@
       "@pages": ["./pages/index"],
       "@pages/*": ["./pages/*"],
       "@stores": ["./stores/index"],
+      "@models": ["./models/index"],
       "@utils": ["./utils/index"]
     }
   }

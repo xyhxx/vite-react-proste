@@ -23,7 +23,7 @@ specifiers:
   editorconfig: 0.15.3
   eslint: ^8.23.1
   eslint-config-prettier: ^8.5.0
-  eslint-config-proste: ^2.12.5
+  eslint-config-proste: ^2.12.6
   eslint-plugin-import: ^2.26.0
   eslint-plugin-react: ^7.31.8
   eslint-plugin-react-hooks: ^4.6.0
@@ -83,7 +83,7 @@ devDependencies:
   editorconfig: 0.15.3
   eslint: 8.23.1
   eslint-config-prettier: 8.5.0_eslint@8.23.1
-  eslint-config-proste: 2.12.5_iscjl53fkcikzmn5a2f2kep2xu
+  eslint-config-proste: 2.12.6_iscjl53fkcikzmn5a2f2kep2xu
   eslint-plugin-import: 2.26.0_uzffwd2kxyy6gwinwkcp25zmz4
   eslint-plugin-react: 7.31.8_eslint@8.23.1
   eslint-plugin-react-hooks: 4.6.0_eslint@8.23.1
@@ -2898,8 +2898,8 @@ packages:
       eslint: 8.23.1
     dev: true
 
-  /eslint-config-proste/2.12.5_iscjl53fkcikzmn5a2f2kep2xu:
-    resolution: {integrity: sha512-RPzZyIIK1oK7dRjI9h6KZSA9PxBs6BH74pOboNwCKhjFWHPvMaPAnEqRsWPg7lHhGIqwc4PFkYcsIT1e6ccoyA==}
+  /eslint-config-proste/2.12.6_iscjl53fkcikzmn5a2f2kep2xu:
+    resolution: {integrity: sha512-Nl5upx5BQJtaVBAnGsg5qZCiEz1m9wHpIHM3zKK3DAUb/K70lv2L4s2TN48o/q3jnw6CIj0xOHns+981Mv6Qpg==}
     peerDependencies:
       '@typescript-eslint/eslint-plugin': ^5.4.0
       '@typescript-eslint/parser': ^5.4.0
