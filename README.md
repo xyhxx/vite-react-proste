@@ -66,8 +66,6 @@ Simple, convenient, out of the box, using vite's react template
 
 ✅ stylelint config
 
-✅ prettier config
-
 ✅ editor config
 
 ## LICENSE
