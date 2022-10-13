@@ -50,8 +50,6 @@ Simple, convenient, out of the box, using vite's react template
 
 ✅ Stylelint
 
-✅ Prettier
-
 ✅ PostCSS
 
 ## 🎊Preset
