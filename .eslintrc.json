@@ -1,7 +1,6 @@
 {
   "extends": [
-    "proste/reactTS.js",
-    "eslint-config-prettier"
+    "proste/reactTS.js"
   ],
   "parserOptions": {
     "project": "./tsconfig.json",
