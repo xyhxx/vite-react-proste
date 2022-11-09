@@ -7,7 +7,7 @@ import {FC} from 'react';
 import {useCount} from '@stores';
 import shallow from 'zustand/shallow';
 
-const Home: FC = function () {
+const Home: FC = function() {
   const [style, cla] = useClassNames({styleSheet: css, camelTransition: '-'});
   const {count, inc, dec} = useCount(state => state, shallow);
 

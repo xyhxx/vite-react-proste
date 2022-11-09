@@ -2,6 +2,8 @@ import {defineConfig} from 'vitest/config';
 import {resolve} from 'path';
 import react from '@vitejs/plugin-react';
 import {visualizer} from 'rollup-plugin-visualizer';
+import progress from 'vite-plugin-progress';
+import {chunkSplitPlugin} from 'vite-plugin-chunk-split';
 import {PluginOption} from 'vite';
 
 // https://vitejs.dev/config/
@@ -12,7 +14,14 @@ export default defineConfig({
         babelrc: true,
       },
     }),
-    visualizer() as PluginOption,
+    visualizer({filename: './visualizer/index.html'}),
+    progress(),
+    chunkSplitPlugin({
+      strategy: 'default',
+      customSplitting: {
+        'react-vendor': ['react', 'react-dom', 'react-router-dom'],
+      },
+    }) as PluginOption,
   ],
   css: {
     modules: {

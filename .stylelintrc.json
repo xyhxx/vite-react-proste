@@ -2,8 +2,7 @@
   "extends": [
     "stylelint-config-standard",
     "stylelint-config-standard-scss",
-    "stylelint-config-recess-order",
-    "stylelint-config-prettier"
+    "stylelint-config-recess-order"
   ],
   "rules": {
     "font-family-name-quotes": null,

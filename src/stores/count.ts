@@ -12,7 +12,7 @@ type Action = {
 };
 
 export const useCount = create<State & Action, ZustandDevtools>(
-  devtools(function (set) {
+  devtools(function(set) {
     return {
       count: 0,
       inc() {
