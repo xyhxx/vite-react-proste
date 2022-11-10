@@ -2,20 +2,29 @@ import {defineConfig} from 'vitest/config';
 import {resolve} from 'path';
 import react from '@vitejs/plugin-react';
 import {visualizer} from 'rollup-plugin-visualizer';
-import progress from 'vite-plugin-progress';
 import {chunkSplitPlugin} from 'vite-plugin-chunk-split';
 import {PluginOption} from 'vite';
+import eslint from '@nabla/vite-plugin-eslint';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  build: {
+    rollupOptions: {
+      output: {
+        chunkFileNames: 'js/[name].[hash].js',
+        entryFileNames: 'js/[name].[hash].js',
+        assetFileNames: 'assets/[name].[hash].[ext]',
+      },
+    },
+  },
   plugins: [
     react({
       babel: {
         babelrc: true,
       },
     }),
+    eslint(),
     visualizer({filename: './visualizer/index.html'}),
-    progress(),
     chunkSplitPlugin({
       strategy: 'default',
       customSplitting: {
