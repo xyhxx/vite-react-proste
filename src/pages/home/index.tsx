@@ -1,15 +1,18 @@
 import icon from '@assets/images/logo.svg';
-
-import css from './index.module.scss';
-
+import css from './index.module.css';
 import {useClassNames} from 'react-hook-classnames';
 import {FC} from 'react';
-import {useCount} from '@stores';
-import shallow from 'zustand/shallow';
+import {countState} from '@stores';
+import {shallowEqual} from '@utils';
+import {useStore} from 'zustand';
 
 const Home: FC = function() {
   const [style, cla] = useClassNames({styleSheet: css, camelTransition: '-'});
-  const {count, inc, dec} = useCount(state => state, shallow);
+  const {count, inc, dec} = useStore(
+    countState,
+    state => state,
+    shallowEqual,
+  );
 
   return (
     <>

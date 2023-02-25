@@ -2,6 +2,9 @@
   "extends": [
     "proste/reactTS.js"
   ],
+  "plugins": [
+    "import-newlines"
+  ],
   "parserOptions": {
     "project": "./tsconfig.json",
     "tsconfigRootDir": ".",

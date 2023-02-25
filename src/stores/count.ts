@@ -1,6 +1,4 @@
-import create from 'zustand';
-import {devtools} from 'zustand/middleware';
-import type {ZustandDevtools} from '.';
+import {createStore} from 'zustand';
 
 type State = {
   count: number;
@@ -11,16 +9,24 @@ type Action = {
   dec: () => void;
 };
 
-export const useCount = create<State & Action, ZustandDevtools>(
-  devtools(function(set) {
+export const countState = createStore<State & Action>(
+  function(set) {
     return {
       count: 0,
       inc() {
-        set(val => ({count: val.count + 1}), false, 'inc');
+        set(function({count}) {
+          return {
+            count: count + 1,
+          };
+        }, false);
       },
       dec() {
-        set(val => ({count: val.count - 1}), false, 'dec');
+        set(function({count}) {
+          return {
+            count: count - 1,
+          };
+        }, false);
       },
     };
-  }),
+  },
 );

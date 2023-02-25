@@ -1,7 +1,6 @@
 {
   "extends": [
     "stylelint-config-standard",
-    "stylelint-config-standard-scss",
     "stylelint-config-recess-order"
   ],
   "rules": {
@@ -11,7 +10,10 @@
     "max-nesting-depth": [
       2,
       {
-        "ignore": ["blockless-at-rules", "pseudo-classes"]
+        "ignore": [
+          "blockless-at-rules",
+          "pseudo-classes"
+        ]
       }
     ],
     "max-line-length": 100,
@@ -19,6 +21,14 @@
     "no-duplicate-selectors": true,
     "no-descending-specificity": null,
     "selector-class-pattern": "^([a-z][a-z0-9]*)((-|__)[a-z0-9]+)*$",
-    "selector-pseudo-class-no-unknown": [true, {"ignorePseudoClasses": ["global", "local"]}]
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": [
+          "global",
+          "local"
+        ]
+      }
+    ]
   }
 }
