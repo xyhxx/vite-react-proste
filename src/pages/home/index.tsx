@@ -1,12 +1,12 @@
 import icon from '@assets/images/logo.svg';
 import css from './index.module.css';
 import {FC} from 'react';
-import {useCount} from '@stores';
-import shallow from 'zustand/shallow';
+import {countStore} from '@stores';
 import cla from 'classnames';
+import {useStoreSelector} from '@hooks';
 
 const Home: FC = function () {
-  const {count, inc, dec} = useCount(state => state, shallow);
+  const {count, inc, dec} = useStoreSelector(countStore);
 
   return (
     <>

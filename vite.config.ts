@@ -59,7 +59,7 @@ export default defineConfig(function ({mode}) {
       },
     },
     test: {
-      include: ['__tests__/*.tsx', '__tests__/*.{test, spec}.tsx'],
+      include: ['src/**/*.{test, spec}.{js,jsx,ts,tsx}'],
       environment: 'jsdom',
       setupFiles: './src/setupTest.ts',
     },
