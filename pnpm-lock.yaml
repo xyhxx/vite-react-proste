@@ -7,6 +7,9 @@ dependencies:
   axios:
     specifier: ^1.3.5
     version: 1.3.5
+  classnames:
+    specifier: ^2.3.2
+    version: 2.3.2
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -16,9 +19,6 @@ dependencies:
   react-error-boundary:
     specifier: ^4.0.3
     version: 4.0.3(react@18.2.0)
-  react-hook-classnames:
-    specifier: ^2.0.2
-    version: 2.0.2(react@18.2.0)
   react-router-dom:
     specifier: ^6.10.0
     version: 6.10.0(react-dom@18.2.0)(react@18.2.0)
@@ -3056,6 +3056,10 @@ packages:
     resolution: {integrity: sha512-BrgHpW9NURQgzoNyjfq0Wu6VFO6D7IZEmJNdtgNqpzGG8RuNFHt2jQxWlAs4HMe119chBnv+34syEZtc6IhLtA==}
     dev: true
 
+  /classnames@2.3.2:
+    resolution: {integrity: sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==}
+    dev: false
+
   /cliui@8.0.1:
     resolution: {integrity: sha512-BSeNnyus75C4//NQ9gQt1/csTXyo/8Sb+afLAkzAptFuMsod9HFokGNudZpi/oQV73hnVK+sR+5PVRMd+Dr7YQ==}
     engines: {node: '>=12'}
@@ -5493,14 +5497,6 @@ packages:
       react: '>=16.13.1'
     dependencies:
       '@babel/runtime': 7.21.0
-      react: 18.2.0
-    dev: false
-
-  /react-hook-classnames@2.0.2(react@18.2.0):
-    resolution: {integrity: sha512-T6w0tkaR1YYxg+MnmCARPHpHkgi77Yt77Zj/jR6QYNzXRYXFYLXVw/QMXp35X260YI118EFy34864mSS/3DLYQ==}
-    peerDependencies:
-      react: '>=16.8'
-    dependencies:
       react: 18.2.0
     dev: false
 
