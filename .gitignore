@@ -26,3 +26,9 @@ dist-ssr
 visualizer
 package-lock.json
 .eslintcache
+
+analyzer
+coverage
+.swc
+cypress/videos
+cypress/screenshots
