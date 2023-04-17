@@ -4,6 +4,9 @@ import react from '@vitejs/plugin-react-swc';
 import {visualizer} from 'rollup-plugin-visualizer';
 import {PluginOption} from 'vite';
 import eslint from '@nabla/vite-plugin-eslint';
+import postcssNest from 'postcss-nesting';
+import postcssPresetEnv from 'postcss-preset-env';
+import browserslistToEsbuild from 'browserslist-to-esbuild';
 
 export default defineConfig(function ({mode}) {
   const plugins: [string, Record<string, any>][] = [];
@@ -19,6 +22,7 @@ export default defineConfig(function ({mode}) {
   return {
     base: './',
     build: {
+      target: browserslistToEsbuild(),
       rollupOptions: {
         output: {
           chunkFileNames: 'js/[name].[hash].js',
@@ -40,6 +44,18 @@ export default defineConfig(function ({mode}) {
     css: {
       modules: {
         generateScopedName: '[local]-[hash:base64:5]',
+        localsConvention: 'dashes',
+      },
+      postcss: {
+        plugins: [
+          postcssNest(),
+          postcssPresetEnv({
+            stage: 3,
+            autoprefixer: {
+              flexbox: 'no-2009',
+            },
+          }),
+        ],
       },
     },
     test: {

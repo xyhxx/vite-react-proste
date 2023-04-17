@@ -30,6 +30,24 @@ html {
   justify-content: space-evenly;
   width: 200px;
   margin: 30px auto 0;
+
+  & button {
+    width: 100px;
+    padding: 6px 0;
+    color: white;
+    cursor: pointer;
+    border: unset;
+    border-radius: 4px;
+
+    &:nth-child(1) {
+      margin-right: 14px;
+      background-color: #43a047;
+    }
+
+    &:nth-child(2) {
+      background-color: #2196f3;
+    }
+  }
 }
 
 .title-red {

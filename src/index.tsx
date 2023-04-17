@@ -1,4 +1,4 @@
-import '@styles/index.scss';
+import '@styles/index.css';
 
 import PrivateRoutes from '@routes';
 import {createRoot} from 'react-dom/client';
