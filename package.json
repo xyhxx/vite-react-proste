@@ -6,7 +6,77 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "vitest"
+    "test": "vitest",
+    "lint:style": "stylelint packages/app/src *.*.css",
+    "lint:js": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:style-fix": "pnpm run lint:style --fix",
+    "lint:js-fix": "pnpm run lint:script --fix",
+    "prettier": "prettier -c --write **/*",
+    "prepare": "husky install",
+    "postinstall": "husky install",
+    "pre-commit": "lint-staged",
+    "release": "standard-version",
+    "release:major": "standard-version --release-as major",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
+    "commit": "cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog",
+      "types": {
+        "feat": {
+          "description": "A new feature",
+          "title": "Features"
+        },
+        "fix": {
+          "description": "A bug fix",
+          "title": "Bug Fixes"
+        },
+        "update": {
+          "description": "Modify src files",
+          "title": "Updates"
+        },
+        "chore": {
+          "description": "Other changes that don't modify src or test files",
+          "title": "Chores"
+        },
+        "test": {
+          "description": "Adding missing tests or correcting existing tests",
+          "title": "Tests"
+        },
+        "style": {
+          "description": "Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)",
+          "title": "Styles"
+        },
+        "refactor": {
+          "description": "A code change that neither fixes a bug nor adds a feature",
+          "title": "Code Refactoring"
+        },
+        "perf": {
+          "description": "A code change that improves performance",
+          "title": "Performance Improvements"
+        },
+        "revert": {
+          "description": "Reverts a previous commit",
+          "title": "Reverts"
+        },
+        "merge": {
+          "description": "Merge branch",
+          "title": "Merges"
+        }
+      }
+    }
+  },
+  "lint-staged": {
+    "**/*/*.css": [
+      "stylelint",
+      "prettier --write"
+    ],
+    "**/*/*.{js,jsx,ts,tsx}": [
+      "eslint",
+      "prettier --write"
+    ]
   },
   "dependencies": {
     "@tanstack/react-query": "^4.29.2",
@@ -19,6 +89,8 @@
     "zustand": "^4.3.7"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.6.1",
+    "@commitlint/config-conventional": "^17.6.1",
     "@nabla/vite-plugin-eslint": "^1.5.0",
     "@tanstack/react-query-devtools": "^4.29.2",
     "@testing-library/dom": "^9.2.0",
@@ -37,6 +109,8 @@
     "babel-plugin-react-remove-properties": "^0.3.0",
     "babel-preset-react-app": "^10.0.1",
     "browserslist-to-esbuild": "^1.2.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "editorconfig": "^1.0.2",
     "eslint": "^8.38.0",
     "eslint-config-prettier": "^8.8.0",
@@ -44,7 +118,9 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.3",
     "jsdom": "^21.1.1",
+    "lint-staged": "^13.2.1",
     "postcss": "^8.4.21",
     "postcss-nesting": "^11.2.2",
     "postcss-preset-env": "^8.3.2",
@@ -52,6 +128,7 @@
     "react-app-polyfill": "^3.0.0",
     "react-test-renderer": "^18.2.0",
     "rollup-plugin-visualizer": "^5.9.0",
+    "standard-version": "^9.5.0",
     "stylelint": "^15.4.0",
     "stylelint-config-recess-order": "^4.0.0",
     "stylelint-config-standard": "^32.0.0",

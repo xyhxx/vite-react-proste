@@ -1,0 +1,44 @@
+{
+  "types": [
+    {
+      "type": "feat",
+      "section": "Features"
+    },
+    {
+      "type": "fix",
+      "section": "Bug Fixes"
+    },
+    {
+      "type": "chore",
+      "section": "Chores"
+    },
+    {
+      "type": "test",
+      "hidden": true
+    },
+    {
+      "type": "style",
+      "hidden": true
+    },
+    {
+      "type": "refactor",
+      "hidden": true
+    },
+    {
+      "type": "perf",
+      "hidden": true
+    },
+    {
+      "type": "revert",
+      "section": "Reverts"
+    },
+    {
+      "type": "update",
+      "section": "Updates"
+    },
+    {
+      "type": "merge",
+      "section": "Merges"
+    }
+  ]
+}
