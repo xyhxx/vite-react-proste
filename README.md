@@ -53,6 +53,8 @@ Simple, convenient, out of the box, using vite's react template
 
 ✅ PostCSS
 
+✅ Cypress
+
 ## 🎊Preset
 
 > Alias folders are exported using index
