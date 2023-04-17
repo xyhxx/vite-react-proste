@@ -1,8 +1,0 @@
-[production staging]
->= 5%
-not dead
-not ie <= 11
-
-
-[development]
-last 1 chrome version
