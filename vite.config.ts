@@ -20,7 +20,13 @@ export default defineConfig(function ({mode}) {
     ]);
 
   return {
+    define: {
+      'process.env': process.env,
+    },
     base: './',
+    server: {
+      port: 3000,
+    },
     build: {
       target: browserslistToEsbuild(),
       rollupOptions: {

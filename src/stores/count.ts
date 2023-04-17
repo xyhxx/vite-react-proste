@@ -9,14 +9,22 @@ type Action = {
   dec: () => void;
 };
 
-export const countStore = createStore<State & Action>(function (set) {
+export const countState = createStore<State & Action>(function (set) {
   return {
     count: 0,
     inc() {
-      set(val => ({count: val.count + 1}), false);
+      set(function ({count}) {
+        return {
+          count: process.env.IS_E2E ? count + 2 : count + 1,
+        };
+      }, false);
     },
     dec() {
-      set(val => ({count: val.count - 1}), false);
+      set(function ({count}) {
+        return {
+          count: process.env.IS_E2E ? count - 2 : count - 1,
+        };
+      }, false);
     },
   };
 });

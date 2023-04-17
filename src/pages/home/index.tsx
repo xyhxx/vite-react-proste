@@ -1,12 +1,12 @@
 import icon from '@assets/images/logo.svg';
 import css from './index.module.css';
 import {FC} from 'react';
-import {countStore} from '@stores';
+import {countState} from '@stores';
 import cla from 'classnames';
 import {useStoreSelector} from '@hooks';
 
 const Home: FC = function () {
-  const {count, inc, dec} = useStoreSelector(countStore);
+  const {count, inc, dec} = useStoreSelector(countState);
 
   return (
     <>
