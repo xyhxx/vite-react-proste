@@ -1,6 +1,7 @@
 {
   "extends": [
-    "proste/reactTS.js"
+    "proste/reactTS.js",
+    "prettier"
   ],
   "parserOptions": {
     "project": "./tsconfig.json",

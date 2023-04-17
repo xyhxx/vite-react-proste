@@ -8,7 +8,8 @@ Simple, convenient, out of the box, using vite's react template
 
 ## Usage
 
-- Clone this repo, like `git clone https://github.com/xyhxx/vite-react-proste.git`. In addition, you
+- Clone this repo, like
+  `git clone https://github.com/xyhxx/vite-react-proste.git`. In addition, you
   can click "Use this template" to copy this template to your repositories
 
 - Install all dependencies `pnpm install`
@@ -25,8 +26,8 @@ Simple, convenient, out of the box, using vite's react template
 
 ## ✨Packages
 
-> typescript is used in the project, and all dependencies that need to install @types/xxx have been
-> added
+> typescript is used in the project, and all dependencies that need to install
+> @types/xxx have been added
 
 ✅ Zustand
 
@@ -60,11 +61,14 @@ Simple, convenient, out of the box, using vite's react template
 
 ✅ alias(@pages, @routes, @apis...)
 
-✅ reamove data-testid in production (use babel-plugin-react-remove-properties)
+✅ reamove data-testid in production (use
+[swc-plugin-react-remove-properties](https://github.com/g-plane/swc-plugin-react-remove-properties))
 
 ✅ eslint config(use eslint-config-proste)
 
 ✅ stylelint config
+
+✅ prettier config
 
 ✅ editor config
 
