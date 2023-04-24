@@ -171,6 +171,9 @@ devDependencies:
   vitest:
     specifier: ^0.30.1
     version: 0.30.1(jsdom@21.1.1)
+  web-vitals:
+    specifier: ^3.3.1
+    version: 3.3.1
 
 packages:
 
@@ -6997,6 +7000,10 @@ packages:
     resolution: {integrity: sha512-XHPEwS0q6TaxcvG85+8EYkbiCux2XtWG2mkc47Ng2A77BQu9+DqIOJldST4HgPkuea7dvKSj5VgX3P1d4rW8Tg==}
     dependencies:
       defaults: 1.0.4
+    dev: true
+
+  /web-vitals@3.3.1:
+    resolution: {integrity: sha512-LTfY5GjcY3ngFzNsYFSYL+AmVmlWrzPTUxSMDis2rZbf+SzT7HH3NH4Y/l45XOlrAIunOBeURN9qtBHkRskAiA==}
     dev: true
 
   /webidl-conversions@7.0.0:
