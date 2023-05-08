@@ -5,6 +5,9 @@ module.exports = {
     tsconfigRootDir: '.',
     warnOnUnsupportedTypeScriptVersion: true,
   },
+  global: {
+    Vi: 'readonly',
+  },
   overrides: [
     {
       files: ['cypress/**', 'cypress.config.ts'],

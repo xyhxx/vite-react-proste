@@ -68,6 +68,7 @@ export default defineConfig(function ({mode}) {
       include: ['src/**/*.{test, spec}.{js,jsx,ts,tsx}'],
       environment: 'jsdom',
       setupFiles: './src/setupTest.ts',
+      globals: true,
     },
     resolve: {
       alias: {

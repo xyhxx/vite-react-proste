@@ -15,7 +15,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "types": ["vitest"]
+    "types": ["vitest/globals"]
   },
   "extends": "./tsconfig.paths.json",
   "exclude": ["node_modules", "cypress.config.ts"],
