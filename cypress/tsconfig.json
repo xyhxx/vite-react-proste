@@ -2,18 +2,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "target": "ES5",
-    "lib": [
-      "ES5",
-      "DOM"
-    ],
-    "types": [
-      "cypress",
-      "./support"
-    ]
+    "lib": ["ES5", "DOM"],
+    "types": ["cypress", "./support"]
   },
-  "include": [
-    "../node_modules/cypress",
-    "./**/*.ts",
-    "../cypress.config.ts"
-  ]
+  "include": ["../node_modules/cypress", "./**/*.ts", "../cypress.config.ts"]
 }

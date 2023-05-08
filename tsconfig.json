@@ -2,11 +2,7 @@
   "compilerOptions": {
     "target": "ESNext",
     "useDefineForClassFields": true,
-    "lib": [
-      "DOM",
-      "DOM.Iterable",
-      "ESNext"
-    ],
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": false,
     "skipLibCheck": true,
     "esModuleInterop": false,
@@ -19,19 +15,9 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "types": [
-      "vitest"
-    ]
+    "types": ["vitest"]
   },
   "extends": "./tsconfig.paths.json",
-  "exclude": [
-    "node_modules",
-    "cypress.config.ts"
-  ],
-  "include": [
-    "src",
-    "vite.config.ts",
-    "__tests__",
-    ".eslintrc.js"
-  ]
+  "exclude": ["node_modules", "cypress.config.ts"],
+  "include": ["src", "vite.config.ts", "__tests__", ".eslintrc.js"]
 }

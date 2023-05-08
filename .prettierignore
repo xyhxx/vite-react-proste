@@ -29,3 +29,11 @@ yarn-error.log
 analyzer/
 node_modules/
 pnpm-lock.yaml
+.env*
+.husky/
+.eslintcache
+.gitignore
+.prettierignore
+.swc/
+.versionrc
+cypress/videos/
