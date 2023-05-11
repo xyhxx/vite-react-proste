@@ -32,3 +32,5 @@ coverage
 .swc
 cypress/videos
 cypress/screenshots
+.eslintchache
+stats.html
