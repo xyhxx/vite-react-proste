@@ -148,7 +148,6 @@
     "stylelint": "^15.4.0",
     "stylelint-config-recess-order": "^4.0.0",
     "stylelint-config-standard": "^32.0.0",
-    "swc-plugin-react-remove-properties": "^0.1.2",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.4",
     "vite": "^4.2.1",

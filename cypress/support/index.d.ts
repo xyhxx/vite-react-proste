@@ -2,8 +2,8 @@ declare namespace Cypress {
   interface Chainable<Subject = any> {
     /**
      * Custom command to select DOM element by data-testid attribute.
-     * @example cy.getTestId('greeting')
+     * @example cy.getById('title')
      */
-    getByTestId(value: string): Chainable<JQuery<HTMLElement>>;
+    getById(value: string): Chainable<JQuery<HTMLElement>>;
   }
 }

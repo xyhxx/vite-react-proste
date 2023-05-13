@@ -156,9 +156,6 @@ devDependencies:
   stylelint-config-standard:
     specifier: ^32.0.0
     version: 32.0.0(stylelint@15.4.0)
-  swc-plugin-react-remove-properties:
-    specifier: ^0.1.2
-    version: 0.1.2
   ts-node:
     specifier: ^10.9.1
     version: 10.9.1(@types/node@18.15.11)(typescript@5.0.4)
@@ -6516,10 +6513,6 @@ packages:
 
   /svg-tags@1.0.0:
     resolution: {integrity: sha512-ovssysQTa+luh7A5Weu3Rta6FJlFBBbInjOh722LIt6klpU2/HtdUbszju/G4devcvk8PGt7FCLv5wftu3THUA==}
-    dev: true
-
-  /swc-plugin-react-remove-properties@0.1.2:
-    resolution: {integrity: sha512-cbszLA9tzZg8oVgFyFRVuCLIo0T7enmLJi/RD9XSY+50cn+N5rOWJRYatEuXy1hZHd+HzXocntUiMxdPW5k99Q==}
     dev: true
 
   /symbol-tree@3.2.4:

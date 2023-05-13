@@ -1,16 +1,16 @@
 import routes from '@routes';
 import {RouterProvider} from 'react-router-dom';
-import {fireEvent, render, screen as sc} from '@testing-library/react';
+import {fireEvent, render} from '@testing-library/react';
 
 test(`
   1. click increment btn, innterHTML is count is 1
   2. click reduce btn, innertTHML is count is 0
 `, () => {
-  render(<RouterProvider router={routes} />);
+  const {container} = render(<RouterProvider router={routes} />);
 
-  const incrementBtn = sc.getByTestId('increment');
-  const reduceBtn = sc.getByTestId('reduce');
-  const html = sc.getByTestId('title');
+  const incrementBtn = container.querySelector('#inc_btn')!;
+  const reduceBtn = container.querySelector('#dec_btn')!;
+  const html = container.querySelector('#title')!;
 
   fireEvent.click(incrementBtn);
 

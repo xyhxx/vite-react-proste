@@ -8,17 +8,7 @@ import postcssNest from 'postcss-nesting';
 import postcssPresetEnv from 'postcss-preset-env';
 import browserslistToEsbuild from 'browserslist-to-esbuild';
 
-export default defineConfig(function ({mode}) {
-  const plugins: [string, Record<string, any>][] = [];
-
-  if (mode === 'production')
-    plugins.push([
-      'swc-plugin-react-remove-properties',
-      {
-        properties: ['data-testid'],
-      },
-    ]);
-
+export default defineConfig(function () {
   return {
     define: {
       'process.env': process.env,
@@ -41,9 +31,7 @@ export default defineConfig(function ({mode}) {
       },
     },
     plugins: [
-      react({
-        plugins,
-      }),
+      react(),
       eslint(),
       visualizer({filename: './visualizer/index.html'}) as PluginOption,
     ],
