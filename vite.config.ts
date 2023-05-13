@@ -25,13 +25,13 @@ export default defineConfig(function () {
           entryFileNames: 'js/[name].[hash].js',
           assetFileNames: 'assets/[name].[hash].[ext]',
           manualChunks: {
-            'react-vendor': ['react', 'react-dom', 'react-router-dom'],
+            reactVendor: ['react', 'react-dom', 'react-router-dom'],
           },
         },
       },
     },
     plugins: [
-      react(),
+      react({tsDecorators: true}),
       eslint(),
       visualizer({filename: './visualizer/index.html'}) as PluginOption,
     ],
@@ -55,7 +55,6 @@ export default defineConfig(function () {
     test: {
       include: ['src/**/*.{test, spec}.{js,jsx,ts,tsx}'],
       environment: 'jsdom',
-      setupFiles: './src/setupTest.ts',
       globals: true,
     },
     resolve: {

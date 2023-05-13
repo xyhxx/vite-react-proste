@@ -15,7 +15,8 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "types": ["vitest/globals"]
+    "types": ["vitest/globals"],
+    "experimentalDecorators": true
   },
   "extends": "./tsconfig.paths.json",
   "exclude": ["node_modules", "cypress.config.ts"],
