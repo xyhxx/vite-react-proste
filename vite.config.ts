@@ -17,7 +17,11 @@ export default defineConfig(function () {
     server: {
       port: 3000,
     },
+    esbuild: {
+      legalComments: 'none',
+    },
     build: {
+      emptyOutDir: true,
       target: browserslistToEsbuild(),
       rollupOptions: {
         output: {
