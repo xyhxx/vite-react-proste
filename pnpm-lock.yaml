@@ -100,14 +100,17 @@ devDependencies:
     specifier: ^8.38.0
     version: 8.38.0
   eslint-config-proste:
-    specifier: ^5.1.0
-    version: 5.1.0(@typescript-eslint/eslint-plugin@5.58.0)(@typescript-eslint/parser@5.58.0)(eslint-plugin-import@2.27.5)(eslint-plugin-react-hooks@4.6.0)(eslint-plugin-react@7.32.2)(eslint@8.38.0)
+    specifier: ^6.1.1
+    version: 6.1.1(@typescript-eslint/eslint-plugin@5.58.0)(@typescript-eslint/parser@5.58.0)(eslint-plugin-import-newlines@1.3.1)(eslint-plugin-import@2.27.5)(eslint-plugin-react-hooks@4.6.0)(eslint-plugin-react@7.32.2)(eslint@8.38.0)
   eslint-plugin-cypress:
     specifier: ^2.13.2
     version: 2.13.2(eslint@8.38.0)
   eslint-plugin-import:
     specifier: ^2.27.5
     version: 2.27.5(@typescript-eslint/parser@5.58.0)(eslint@8.38.0)
+  eslint-plugin-import-newlines:
+    specifier: ^1.3.1
+    version: 1.3.1(eslint@8.38.0)
   eslint-plugin-react:
     specifier: ^7.32.2
     version: 7.32.2(eslint@8.38.0)
@@ -2984,13 +2987,14 @@ packages:
       source-map: 0.6.1
     dev: true
 
-  /eslint-config-proste@5.1.0(@typescript-eslint/eslint-plugin@5.58.0)(@typescript-eslint/parser@5.58.0)(eslint-plugin-import@2.27.5)(eslint-plugin-react-hooks@4.6.0)(eslint-plugin-react@7.32.2)(eslint@8.38.0):
-    resolution: {integrity: sha512-zo4du6niqOsYX8csslPjxPcBa/eWIwXM6/BVZ4G6Rf0sI13e0RkWV+5yb4hu1bdZ1mgX2ogcIr3vUho5GEBgLg==}
+  /eslint-config-proste@6.1.1(@typescript-eslint/eslint-plugin@5.58.0)(@typescript-eslint/parser@5.58.0)(eslint-plugin-import-newlines@1.3.1)(eslint-plugin-import@2.27.5)(eslint-plugin-react-hooks@4.6.0)(eslint-plugin-react@7.32.2)(eslint@8.38.0):
+    resolution: {integrity: sha512-4SbgCFO9Hub42Ui3/bQi870BZJeqFUNZEbSe29URA6pfg0tn15vh9wRAXjzkdz4PhpIhNCSjzeQsUDhhGEkp9A==}
     peerDependencies:
       '@typescript-eslint/eslint-plugin': '>=5.4.0'
       '@typescript-eslint/parser': '>=5.4.0'
       eslint: '>=7.32.0'
       eslint-plugin-import: '>=2.25.3'
+      eslint-plugin-import-newlines: '>=1.3.0'
       eslint-plugin-react: '>=7.27.1'
       eslint-plugin-react-hooks: '>=4.3.0'
     peerDependenciesMeta:
@@ -3007,6 +3011,7 @@ packages:
       '@typescript-eslint/parser': 5.58.0(eslint@8.38.0)(typescript@5.0.4)
       eslint: 8.38.0
       eslint-plugin-import: 2.27.5(@typescript-eslint/parser@5.58.0)(eslint@8.38.0)
+      eslint-plugin-import-newlines: 1.3.1(eslint@8.38.0)
       eslint-plugin-react: 7.32.2(eslint@8.38.0)
       eslint-plugin-react-hooks: 4.6.0(eslint@8.38.0)
     dev: true
@@ -3057,6 +3062,16 @@ packages:
     dependencies:
       eslint: 8.38.0
       globals: 11.12.0
+    dev: true
+
+  /eslint-plugin-import-newlines@1.3.1(eslint@8.38.0):
+    resolution: {integrity: sha512-7vyhwliGm+CTwteRw2ym+IO9OaksGYmSt63elPPBM0QJ3zwRwMKtgHOSHVtdHlrSERRTVCsWtMO8dDdAdmHMXg==}
+    engines: {node: '>=10.0.0'}
+    hasBin: true
+    peerDependencies:
+      eslint: '>=6.0.0'
+    dependencies:
+      eslint: 8.38.0
     dev: true
 
   /eslint-plugin-import@2.27.5(@typescript-eslint/parser@5.58.0)(eslint@8.38.0):
