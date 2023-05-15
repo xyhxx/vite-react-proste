@@ -63,14 +63,9 @@ Simple, convenient, out of the box, using vite's react template
 
 ✅ alias(@pages, @routes, @apis...)
 
-✅ reamove data-testid in production (use
-[swc-plugin-react-remove-properties](https://github.com/g-plane/swc-plugin-react-remove-properties))
-
 ✅ eslint config(use eslint-config-proste)
 
 ✅ stylelint config
-
-✅ prettier config
 
 ✅ editor config
 

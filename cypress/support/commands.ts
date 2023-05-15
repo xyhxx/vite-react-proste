@@ -7,6 +7,6 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck
 
-Cypress.Commands.add('getById' as any, function (value) {
+Cypress.Commands.add('getById' as any, function(value) {
   return cy.get(`#${value}`);
 });

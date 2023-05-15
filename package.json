@@ -13,8 +13,7 @@
     "lint:style": "stylelint packages/app/src *.*.css",
     "lint:js": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:style-fix": "pnpm run lint:style --fix",
-    "lint:js-fix": "pnpm run lint:script --fix",
-    "prettier": "prettier -c --write **/*",
+    "lint:js-fix": "pnpm run lint:js --fix",
     "prepare": "husky install",
     "postinstall": "husky install",
     "pre-commit": "lint-staged",
@@ -73,12 +72,10 @@
   },
   "lint-staged": {
     "**/*/*.css": [
-      "stylelint",
-      "prettier --write"
+      "stylelint"
     ],
     "**/*/*.{js,jsx,ts,tsx}": [
-      "eslint",
-      "prettier --write"
+      "eslint"
     ]
   },
   "browserslist": {
@@ -129,7 +126,6 @@
     "cz-conventional-changelog": "^3.3.0",
     "editorconfig": "^1.0.2",
     "eslint": "^8.38.0",
-    "eslint-config-prettier": "^8.8.0",
     "eslint-config-proste": "^5.1.0",
     "eslint-plugin-cypress": "^2.13.2",
     "eslint-plugin-import": "^2.27.5",
@@ -141,7 +137,6 @@
     "postcss": "^8.4.21",
     "postcss-nesting": "^11.2.2",
     "postcss-preset-env": "^8.3.2",
-    "prettier": "^2.8.7",
     "react-test-renderer": "^18.2.0",
     "rollup-plugin-visualizer": "^5.9.0",
     "standard-version": "^9.5.0",

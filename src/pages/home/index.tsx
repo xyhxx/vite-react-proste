@@ -5,7 +5,7 @@ import {countState} from '@stores';
 import cla from 'classnames';
 import {useStoreSelector} from '@hooks';
 
-const Home: FC = function () {
+const Home: FC = function() {
   const {count, inc, dec} = useStoreSelector(countState);
 
   return (
