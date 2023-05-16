@@ -100,8 +100,8 @@ devDependencies:
     specifier: ^8.38.0
     version: 8.38.0
   eslint-config-proste:
-    specifier: ^6.1.1
-    version: 6.1.1(@typescript-eslint/eslint-plugin@5.58.0)(@typescript-eslint/parser@5.58.0)(eslint-plugin-import-newlines@1.3.1)(eslint-plugin-import@2.27.5)(eslint-plugin-react-hooks@4.6.0)(eslint-plugin-react@7.32.2)(eslint@8.38.0)
+    specifier: ^6.2.0
+    version: 6.2.0(@typescript-eslint/eslint-plugin@5.58.0)(@typescript-eslint/parser@5.58.0)(eslint-plugin-import-newlines@1.3.1)(eslint-plugin-import@2.27.5)(eslint-plugin-react-hooks@4.6.0)(eslint-plugin-react@7.32.2)(eslint@8.38.0)
   eslint-plugin-cypress:
     specifier: ^2.13.2
     version: 2.13.2(eslint@8.38.0)
@@ -2987,8 +2987,8 @@ packages:
       source-map: 0.6.1
     dev: true
 
-  /eslint-config-proste@6.1.1(@typescript-eslint/eslint-plugin@5.58.0)(@typescript-eslint/parser@5.58.0)(eslint-plugin-import-newlines@1.3.1)(eslint-plugin-import@2.27.5)(eslint-plugin-react-hooks@4.6.0)(eslint-plugin-react@7.32.2)(eslint@8.38.0):
-    resolution: {integrity: sha512-4SbgCFO9Hub42Ui3/bQi870BZJeqFUNZEbSe29URA6pfg0tn15vh9wRAXjzkdz4PhpIhNCSjzeQsUDhhGEkp9A==}
+  /eslint-config-proste@6.2.0(@typescript-eslint/eslint-plugin@5.58.0)(@typescript-eslint/parser@5.58.0)(eslint-plugin-import-newlines@1.3.1)(eslint-plugin-import@2.27.5)(eslint-plugin-react-hooks@4.6.0)(eslint-plugin-react@7.32.2)(eslint@8.38.0):
+    resolution: {integrity: sha512-Z9ahApw4niq+BjMKfJWOeD/EwEyE00Y9ES9dZSroyC3ZhSujMNNc7r3jl4jM0GYvOadumwGtLmjmSALwRA5Ynw==}
     peerDependencies:
       '@typescript-eslint/eslint-plugin': '>=5.4.0'
       '@typescript-eslint/parser': '>=5.4.0'
@@ -2997,6 +2997,7 @@ packages:
       eslint-plugin-import-newlines: '>=1.3.0'
       eslint-plugin-react: '>=7.27.1'
       eslint-plugin-react-hooks: '>=4.3.0'
+      eslint-plugin-vue: '>=9.13.0'
     peerDependenciesMeta:
       '@typescript-eslint/eslint-plugin':
         optional: true
@@ -3005,6 +3006,8 @@ packages:
       eslint-plugin-react:
         optional: true
       eslint-plugin-react-hooks:
+        optional: true
+      eslint-plugin-vue:
         optional: true
     dependencies:
       '@typescript-eslint/eslint-plugin': 5.58.0(@typescript-eslint/parser@5.58.0)(eslint@8.38.0)(typescript@5.0.4)

@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['proste/reactTS.js'],
+  extends: ['proste/reactTS'],
   parserOptions: {
     project: './tsconfig.json',
     tsconfigRootDir: '.',
