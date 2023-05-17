@@ -126,7 +126,7 @@
     "cz-conventional-changelog": "^3.3.0",
     "editorconfig": "^1.0.2",
     "eslint": "^8.38.0",
-    "eslint-config-proste": "^6.2.0",
+    "eslint-config-proste": "^7.0.0",
     "eslint-plugin-cypress": "^2.13.2",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-import-newlines": "^1.3.1",
