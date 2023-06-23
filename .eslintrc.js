@@ -1,23 +1,14 @@
 module.exports = {
-  extends: ['proste/reactTS'],
+  extends: ['proste/reactTS', 'proste/vitest'],
   parserOptions: {
     project: './tsconfig.json',
     tsconfigRootDir: '.',
     warnOnUnsupportedTypeScriptVersion: true,
   },
-  globals: {
-    suite: true,
-    test: true,
-    describe: true,
-    it: true,
-    expect: true,
-    assert: true,
-    vitest: true,
-    vi: true,
-    beforeAll: true,
-    afterAll: true,
-    beforeEach: true,
-    afterEach: true,
+  plugins: ['xyhxx'],
+  rules: {
+    'xyhxx/if-line': 1,
+    'xyhxx/object-pattern-newline': 1,
   },
   overrides: [
     {
