@@ -37,8 +37,6 @@ Simple, convenient, out of the box, using vite's react template
 
 ✅ Axios
 
-✅ Sass
-
 ✅ Vitest
 
 ✅ Testing Library
