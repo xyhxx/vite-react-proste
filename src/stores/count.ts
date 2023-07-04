@@ -1,12 +1,12 @@
 import {createStore} from 'zustand';
 
 type State = {
-  count: number;
+  count: number,
 };
 
 type Action = {
-  inc: () => void;
-  dec: () => void;
+  inc: () => void,
+  dec: () => void,
 };
 
 export const countState = createStore<State & Action>(function(set) {

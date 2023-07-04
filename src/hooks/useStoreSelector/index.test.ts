@@ -3,7 +3,7 @@ import {useStoreSelector} from '.';
 import {createStore} from 'zustand';
 import {describe, it, expect} from 'vitest';
 
-type State = {name: string; age: number};
+type State = {name: string, age: number};
 type Action = {dispatch: (state: Partial<State>) => void};
 
 function setup() {
