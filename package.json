@@ -72,14 +72,6 @@
       }
     }
   },
-  "lint-staged": {
-    "**/*/*.css": [
-      "stylelint"
-    ],
-    "**/*/*.{js,jsx,ts,tsx}": [
-      "eslint"
-    ]
-  },
   "browserslist": {
     "production": [
       ">= 5%",
