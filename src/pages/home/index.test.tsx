@@ -5,7 +5,7 @@ import {fireEvent, render} from '@testing-library/react';
 it(`
     1. click increment btn, innterHTML is count is 1
     2. click reduce btn, innertTHML is count is 0
-  `, function() {
+  `, function () {
   const {getByTestId} = render(<RouterProvider router={routes} />);
 
   const incBtn = getByTestId('inc_btn');

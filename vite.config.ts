@@ -8,7 +8,7 @@ import postcssNest from 'postcss-nesting';
 import postcssPresetEnv from 'postcss-preset-env';
 import browserslistToEsbuild from 'browserslist-to-esbuild';
 
-export default defineConfig(function() {
+export default defineConfig(function () {
   return {
     define: {
       'process.env': process.env,

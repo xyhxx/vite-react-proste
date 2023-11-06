@@ -2,13 +2,13 @@ import {shallowEqual} from '@utils';
 import {StoreApi, useStore} from 'zustand';
 
 type ExtractState<S> = S extends {
-  getState: () => infer T,
+  getState: () => infer T;
 }
   ? T
   : never;
 
 type WithReact<S extends StoreApi<unknown>> = S & {
-  getServerState?: () => ExtractState<S>,
+  getServerState?: () => ExtractState<S>;
 };
 
 export function useStoreSelector<

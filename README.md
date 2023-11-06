@@ -47,6 +47,8 @@ Simple, convenient, out of the box, using vite's react template
 
 ✅ ESLint
 
+✅ Prettier
+
 ✅ Stylelint
 
 ✅ PostCSS
